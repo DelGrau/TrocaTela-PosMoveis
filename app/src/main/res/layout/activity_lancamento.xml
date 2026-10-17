@@ -9,52 +9,55 @@
     tools:context=".LancamentoActivity">
 
     <TextView
+        android:id="@+id/tvCod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cod"
         android:padding="16dp"
+        android:text="Cod"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/tvCod" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etCod"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvCod"
         app:layout_constraintTop_toTopOf="@id/tvCod" />
 
     <TextView
+        android:id="@+id/tvQtd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Qtd:"
         android:padding="16dp"
+        android:text="Qtd:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCod"
-        android:id="@+id/tvQtd" />
+        app:layout_constraintTop_toBottomOf="@id/tvCod" />
 
     <EditText
         android:id="@+id/etQtd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQtd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/etCod"
         app:layout_constraintTop_toTopOf="@id/tvQtd" />
 
     <TextView
+        android:id="@+id/tvValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor:"
         android:padding="16dp"
+        android:text="Valor:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvQtd"
-        android:id="@+id/tvValor" />
+        app:layout_constraintTop_toBottomOf="@id/tvQtd" />
 
     <EditText
         android:id="@+id/etValor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvValor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/etCod"
         app:layout_constraintTop_toTopOf="@id/tvValor" />
@@ -63,21 +66,21 @@
         android:id="@+id/btConfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirmar"
         android:onClick="btConfirmarOnClick"
-        app:layout_constraintTop_toBottomOf="@id/etValor"
+        android:text="Confirmar"
+        app:layout_constraintEnd_toStartOf="@+id/btListar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btListar" />
+        app:layout_constraintTop_toBottomOf="@id/etValor" />
 
     <Button
         android:id="@+id/btListar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listar"
         android:onClick="btListarOnClick"
-        app:layout_constraintTop_toBottomOf="@id/etValor"
+        android:text="Listar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btConfirmar"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/etValor" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
