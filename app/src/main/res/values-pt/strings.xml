@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">TrocaTela</string>
     <string name="bt_lancamento">Novo Lançamento</string>
+    <string name="code">Cód:</string>
+    <string name="quantity">Qtd:</string>
+    <string name="value">Val:</string>
+    <string name="sms">SMS</string>
+    <string name="confirm_button">Confirmar</string>
+    <string name="list_button">Listar</string>
 </resources>

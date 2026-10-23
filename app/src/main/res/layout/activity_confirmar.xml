@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cod"
+        android:text="@string/code"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Qtd:"
+        android:text="@string/quantity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCodConfirmar" />
 
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Valor:"
+        android:text="@string/value"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQtdConfirmar" />
 
@@ -75,7 +75,7 @@
         android:id="@+id/btSms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SMS"
+        android:text="@string/sms"
         android:onClick="btSmsOnClick"
         app:layout_constraintTop_toBottomOf="@id/etValorConfirmar"
         app:layout_constraintStart_toStartOf="parent"
